@@ -13,5 +13,7 @@ public class Main {
         editor.EditarElemento(a);
         editor.EditarElemento(b);
         editor.EditarKit((Kit) c, a);
+        editor.EditarKit((Kit) c, b);
+        
     }
 }

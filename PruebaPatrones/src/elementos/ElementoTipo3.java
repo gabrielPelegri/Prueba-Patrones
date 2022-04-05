@@ -1,12 +1,14 @@
 package elementos;
 
 public class ElementoTipo3 implements Elemento {
-    int precio=3000;
-    static int codigo=0;
-public ElementoTipo3(){
-    codigo++;
-    this.codigo=codigo;
-}
+    int precio = 3000;
+    int codigo = 0;
+
+    public ElementoTipo3() {
+
+        this.codigo = c + 1;
+    }
+
     @Override
     public int getCodigo() {
         return this.codigo;
@@ -20,7 +22,7 @@ public ElementoTipo3(){
     @Override
     public void mostrarElemento() {
         System.out.print("Precio: " + this.precio);
-        System.out.println("Código: " + this.codigo);
+        System.out.println(" |Código: " + this.codigo);
     }
 
     @Override

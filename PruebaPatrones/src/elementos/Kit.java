@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Kit implements Elemento {
     int codigo;
-    int precio;
+    int  precio;
     ArrayList<Elemento> lista;
 
     public Kit() {
-        lista=new ArrayList<>();
+        lista = new ArrayList<>();
         this.codigo = codigo++;
-        
+
     }
 
     @Override
@@ -23,12 +23,14 @@ public class Kit implements Elemento {
         return this.precio;
 
     }
-    public void setPrecio(){
-       int p=0;
+
+    public void setPrecio() {
+        int p = 0;
         for (Elemento e : lista) {
             p += e.getPrecio();
         }
-        this.precio = p;
+        int descuento = (10 * p) / 100;
+        this.precio =  (p - descuento);
     }
 
     @Override
@@ -44,9 +46,10 @@ public class Kit implements Elemento {
         Elemento e = new Kit();
         return e;
     }
-public void sumarElemento(Elemento e){
-    lista.add(e);
-    setPrecio();
 
-}
+    public void sumarElemento(Elemento e) {
+        lista.add(e);
+        setPrecio();
+
+    }
 }

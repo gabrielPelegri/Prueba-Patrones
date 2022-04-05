@@ -4,7 +4,7 @@ public class ElementoTipo1 implements Elemento {
 
     int precio = 1000;
     
-    int codigo = 0;
+    int codigo;
 
     public ElementoTipo1() {
 this.codigo=c+1;
@@ -23,7 +23,7 @@ this.codigo=c+1;
     @Override
     public void mostrarElemento() {
         System.out.print("Precio: " + this.precio);
-        System.out.println("Código: " + this.codigo);
+        System.out.println(" |Código: " + this.codigo);
     }
 
     @Override
