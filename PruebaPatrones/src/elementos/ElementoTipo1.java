@@ -1,11 +1,14 @@
 package elementos;
 
 public class ElementoTipo1 implements Elemento {
+
     int precio = 1000;
-    int codigo;
+
+    static int codigo=0;
 
     public ElementoTipo1() {
-
+codigo++;
+this.codigo=codigo;
     }
 
     @Override

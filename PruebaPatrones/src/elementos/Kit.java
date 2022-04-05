@@ -8,12 +8,9 @@ public class Kit implements Elemento {
     ArrayList<Elemento> lista;
 
     public Kit() {
+        lista=new ArrayList<>();
         this.codigo = codigo++;
-        int p = 0;
-        for (Elemento e : lista) {
-            p += e.getPrecio();
-        }
-        this.precio = p;
+        
     }
 
     @Override

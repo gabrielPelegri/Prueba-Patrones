@@ -2,7 +2,11 @@ package elementos;
 
 public class ElementoTipo2 implements Elemento {
     int precio=2000;
-    int codigo;
+    static int codigo=0;
+    public ElementoTipo2(){
+        codigo++;
+        this.codigo=codigo;
+    }
 
     @Override
     public int getCodigo() {
