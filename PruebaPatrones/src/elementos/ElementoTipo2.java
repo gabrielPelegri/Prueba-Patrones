@@ -4,8 +4,7 @@ public class ElementoTipo2 implements Elemento {
     int precio=2000;
     static int codigo=0;
     public ElementoTipo2(){
-        codigo++;
-        this.codigo=codigo;
+       this.codigo=c+1;
     }
 
     @Override

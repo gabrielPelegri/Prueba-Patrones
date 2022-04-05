@@ -1,7 +1,8 @@
 package elementos;
 
 public interface Elemento {
-     int c=0;
+    public static int c = 0;
+
     int getCodigo();
 
     int getPrecio();
