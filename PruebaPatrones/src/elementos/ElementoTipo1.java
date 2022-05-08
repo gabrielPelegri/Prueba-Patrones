@@ -3,11 +3,11 @@ package elementos;
 public class ElementoTipo1 implements Elemento {
 
     int precio = 1000;
-    
+
     int codigo;
 
     public ElementoTipo1() {
-this.codigo=c+1;
+        this.codigo = c + 1;
     }
 
     @Override
@@ -31,5 +31,5 @@ this.codigo=c+1;
         ElementoTipo1 e = new ElementoTipo1();
         return e;
     }
-   
+
 }
